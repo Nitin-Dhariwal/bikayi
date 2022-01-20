@@ -9,7 +9,7 @@ const Home = () => {
   const [selectedYear, setSelectedYear] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const fetchData = () => {
-    fetch("http://api.nobelprize.org/v1/prize.json")
+    fetch("https://api.nobelprize.org/v1/prize.json")
       .then((res) => res.json())
       .then((res) => setData(res))
       .catch((err) => console.log(err));
